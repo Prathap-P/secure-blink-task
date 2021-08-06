@@ -1,0 +1,78 @@
+.navbar{
+    display: grid;
+    grid-template-columns: 60% 40%;    
+}
+
+.logo{
+    height: 55px;
+    width: 200px;
+    padding: 0px;
+    margin: 0px 0px 0px 20px;
+}
+
+.btns{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggleBtn{
+    display: none;
+}
+
+.loginBtn, .registerBtn{
+    width: 100px;
+    height: 30px;
+    margin: 0px 8px;
+    padding: 3px;
+    font-size: 18px;
+    background-color: white;
+    border: 1px ridge rgb(138, 133, 133);
+    border-radius: 5px;
+}
+
+.registerBtn{
+    background-color: rgb(66, 168, 26);
+}
+
+@media(max-width : 700px){
+    .navbar{
+        grid-template-columns: auto;
+    }
+
+    .title{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo{
+        width: 70%;
+    }
+
+    .btns{
+        width: 100%;
+        grid-template-columns: auto;
+        background-color: green;
+    }
+    
+    .loginBtn, .registerBtn{
+        border: none;
+        background: none;
+        color: white;
+        margin: 5px;
+    }
+
+    .toggleBtn{
+        display: block;
+        width: 35px;
+        height: 25px;
+        margin-right: 30px; 
+    }
+
+    .hideEle{
+        display: none;
+    }
+}
