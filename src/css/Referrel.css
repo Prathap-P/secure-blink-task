@@ -1,0 +1,57 @@
+.Referrel{
+    margin: 20px 80px;
+}
+
+.referrel-info{
+    font-size: 28px;
+    font-family: bold;
+}
+
+.referrel-img{
+    height: 500px;
+}
+
+@media(min-width: 850px) and (max-width: 1100px){
+    .Referrel{
+        margin: 20px 20px;
+    }
+    
+    .referrel-img{
+        height: 400px;
+        width: 800px;
+    }
+}
+
+@media(min-width: 650px) and (max-width: 850px){
+    .referrel-info{
+        font-size: 22px;
+    }
+
+    .referrel-img{
+        height: 300px;
+        width: 600px;
+    }
+}
+
+@media(max-width: 650px){    
+    .referrel-info{
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .referrel-img{
+        height: 200px;
+        width: 300px;
+    }
+    
+}
+
+@media(max-width: 650px){    
+    .Referrel{
+        margin: 20px 12px;
+        padding: 0px 5px;
+    }
+    .referrel-info, .referrel-title{
+        text-align: center;
+    }
+}

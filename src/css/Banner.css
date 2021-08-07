@@ -1,0 +1,120 @@
+.Banner{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0px 20px 20px 20px;
+    height: 100%;
+}
+
+.banner-content{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    padding: 13% 13%;
+    background-color: #01CB63;
+}
+
+.bigger-text{
+    font-size: 40px;
+    color: white;
+    padding: 10px 0px;
+}
+
+.smaller-text{
+    font-size: 20px;
+    padding: 10px 0px;
+}
+
+.start-btn{
+    background-color: black;
+    color: white;
+    height: 43px;
+    font-size: 15px;
+    padding: 8px 5px;
+    margin: 8px 0px;
+    border: 1px ridge black;
+    border-radius: 5px;
+    width: 120px;
+}
+
+.banner-img{
+    background-image: url('../assets/Rectangle 25.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-bottom{
+    height: 150px;
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-items: center;
+    margin-bottom: 100px; 
+}
+
+.tag{
+    font-size: 22px;
+    color: grey;
+}
+
+.count{
+    font-size: 30px;
+    border-bottom: 2px ridge #01CB63;
+}
+
+@media(max-width: 1000px){
+
+    .bigger-text{
+        font-size: 33px;
+    }
+}
+
+@media(max-width: 770px){
+    .Banner{
+        grid-template-columns: auto;   
+    }
+
+    .bigger-text{
+        font-size: 28px;
+    }
+
+    .smaller-text{
+        font-size: 16px;
+    }
+    
+    .banner-content{
+        background: url('../assets/Rectangle 25.svg');
+        padding: 10% 5%;
+        text-align: center;
+        justify-content:center;
+    }
+    
+    .button-grp{
+        display: grid;
+        justify-content: center;
+    }
+
+    .banner-img{
+        display: none;
+    }
+
+    .banner-bottom{
+        grid-column: span 1;
+        grid-template-columns: 100%;
+        justify-content: center;
+        padding: 10px;
+        height: 100px;
+    }
+
+    .summary{
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .tag{
+        font-size: 16px;
+    }
+    
+    .count{
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,120 @@
+.Courses{
+    margin: 30px 20px;
+    padding: 10px;
+}
+
+.title{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.courses-info{
+    font-size: 28px;
+    font-family: bold;
+}
+
+.courses-list{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 50px 50px; 
+}
+
+.Course{
+    width: 300px;
+    height: 380px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px black;
+}
+
+.Info{
+    padding: 10px;
+}
+
+.name{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 3px 0px;
+}
+
+.icons{
+    width: 20px;
+    height: 20px;
+}
+
+.misc{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    padding: 5px 0px;
+}
+
+.extra{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    align-items: center;
+}
+
+.lecturer{
+    justify-self: left;
+}
+
+.img{
+    background: url('../assets/craig.png');
+    background-size: cover;
+    min-width: 200px;
+    min-height: 200px;
+}
+
+.lectImg{
+    background: url('../assets/craig.png');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+@media(max-width: 1000px){
+    .Course{
+        margin: 0px;
+        justify-self: center;
+    }
+    
+    .courses-list{
+        grid-template-columns: auto auto;        
+    }    
+    
+    .Course:nth-child(3){
+        transform: translateX(50%);
+    }    
+}    
+
+@media(max-width: 700px){
+    .Course{
+        margin: 0px;
+        justify-self: center;
+    }    
+
+    .courses-list{
+        margin: 0px;
+    }
+
+    .courses-info{
+        font-size: 22px;
+    }
+
+    .courses-list{
+        grid-template-columns: 70%;
+    }
+
+    .Course:nth-child(3){
+        transform: translateX(0%);
+    }
+}
+

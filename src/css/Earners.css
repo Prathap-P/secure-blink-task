@@ -1,0 +1,74 @@
+.Earners{
+    margin: 20px 50px;
+    margin-left: 100px;
+}
+
+.earners-title{
+    font-style: italic;
+    color: #01CB63;
+}
+
+.earners-info{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.earner-image{
+    width: 270px;
+}
+
+.earners-list{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    grid-column-gap: 30px;
+}
+
+.earnamount{
+    text-align: end;
+}
+
+.amountearned{
+    border-left: 5px solid #01CB63;
+    padding-left: 1%;
+}
+
+@media (min-width:770px) and (max-width:1000px){
+    .Earners{
+        margin: 20px 50px;
+    }
+    
+    .earner-image{
+        width: 180px;
+    }
+    
+    .earners-list {
+        grid-column-gap: 20px;
+    }
+}
+
+@media (max-width:770px){
+    .Earners{
+        margin: 20px 40px;
+    }
+    
+    .earners-info{
+        font-size: 22px;
+    }
+    
+    .earners-list{
+        grid-template-columns: auto auto
+    }
+    
+    .earner-image{
+        width: 200px;
+    }
+}
+
+@media (max-width:500px){
+    .earner-image{
+        width: 150px;
+    }
+}

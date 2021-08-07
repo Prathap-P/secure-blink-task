@@ -19,7 +19,7 @@ const Navbar= (props) => {
         <div className= 'navbar'>
             <div className= 'title'>
                 <img className= 'logo' src= {logoPath} />
-                <button className= 'toggleBtn' onClick= {() => showNavList(!navListState)}>=</button>
+                <button className= 'toggleBtn' onClick= {() => showNavList(!navListState)}>≡</button>
             </div>
 
             <div className= {`btns ${chooseClsName()}`}>

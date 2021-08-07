@@ -1,0 +1,143 @@
+.Footer{
+    min-height: 400px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-info{
+    font-size: 28px;
+}
+
+.group{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 50px 50px 20px 50px;
+    grid-column-gap: 50px;
+}
+
+.ContactInfo{
+    padding: 30px;
+}
+
+.info-list{
+    display: grid;
+    justify-content: center;
+}
+
+.info:nth-child(1){
+    margin-top: 20px;
+}
+
+.info{
+    display: grid;
+    grid-template-columns: 80px auto;
+}
+
+.icon{
+    width: 70px;
+    height: 70px;
+}
+
+.detail{
+    align-self: center;
+    justify-self: left;
+}
+
+.links-section{
+    margin-top: 25px;
+}
+
+.links{
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.media-icon{
+    margin: 10px;
+    width: 50px;
+}
+
+.ContactForm{
+    margin: 20px 20px 0px 20px;
+    padding: 10px 10px 0px 10px;
+}
+
+.form{
+    padding: 30px;
+}
+
+.pair{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 20px;
+    margin: 10px;
+}
+
+.input{
+    border: 0px;
+    padding: 10px 0px;
+    border-bottom: 2px solid #01CB63;
+}
+
+.textarea{
+    border: 2px solid #01CB63;
+    margin: 30px 10px 30px 10px;
+    width: 90%;
+    height: 200px;
+    padding: 10px;
+}
+
+.submitBtn{
+    width: 150px;
+    height: 40px;
+    border: 0px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.FooterBottom{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 30px;
+    background-color: rgb(223, 219, 219);
+}
+
+.footer-misc{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 20px;
+}
+
+@media(max-width: 1000px){
+    .group{
+        grid-template-columns: auto;
+        margin: 10px 0px;
+    }
+    
+    .footer-info{
+        font-size: 20px;
+    }
+    
+    .ContactInfo{
+        padding: 10px;
+        text-align: center;
+        width: 90%;
+    }
+    
+    .ContactForm{
+        margin: 0px;
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media(min-width: 700px){
+    
+    .ContactForm{
+        width: 70%;
+        justify-self: center;
+    }
+
+}
